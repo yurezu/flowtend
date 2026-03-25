@@ -23,7 +23,7 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
-              href="#demo"
+              href="https://calendly.com/flowtend/flowtend-demo"
               className="rounded-2xl bg-white px-6 py-3 text-center text-sm font-medium text-black transition hover:opacity-90"
             >
               Book a Demo
@@ -166,7 +166,7 @@ export default function Home() {
 
           <div className="mt-10">
             <a
-              href="https://calendly.com/"
+              href="https://calendly.com/flowtend/flowtend-demo"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex rounded-2xl bg-white px-8 py-4 text-sm font-medium text-black transition hover:opacity-90"
