@@ -1,7 +1,32 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-20">
+
+      {/* NAVBAR */}
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="text-lg font-semibold tracking-tight">
+            Flowtend
+          </div>
+
+          <div className="flex items-center gap-6 text-sm text-white/70">
+            <a href="#how-it-works" className="hover:text-white">
+              How it works
+            </a>
+
+            <a
+              href="https://calendly.com/flowtend/flowtend-demo"
+              target="_blank"
+              className="rounded-xl bg-white px-4 py-2 text-black font-medium hover:opacity-90"
+            >
+              Book Demo
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-20 pt-24">
         <div className="max-w-4xl">
           <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
             Built for appointment-based businesses
@@ -24,6 +49,7 @@ export default function Home() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
               href="https://calendly.com/flowtend/flowtend-demo"
+              target="_blank"
               className="rounded-2xl bg-white px-6 py-3 text-center text-sm font-medium text-black transition hover:opacity-90"
             >
               Book a Demo
@@ -68,6 +94,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
       <section
         id="how-it-works"
         className="border-t border-white/10 bg-neutral-900/60"
@@ -116,38 +143,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-white/10">
-        <div className="mx-auto grid max-w-7xl gap-6 px-6 py-20 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-              Why Flowtend
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              Built for businesses that live on appointments
-            </h2>
-            <p className="mt-4 text-base leading-8 text-white/70">
-              Barbershops, salons, and service businesses lose money when
-              clients forget appointments. Flowtend helps keep schedules full
-              and communication automatic.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-              Early version
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-              Start simple. Expand later.
-            </h2>
-            <p className="mt-4 text-base leading-8 text-white/70">
-              We’re starting with the core value first: confirmations,
-              reminders, and follow-ups. Then we’ll expand into deeper business
-              automation as Flowtend grows.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      {/* CTA */}
       <section
         id="demo"
         className="border-t border-white/10 bg-gradient-to-b from-neutral-950 to-neutral-900"
@@ -168,7 +164,6 @@ export default function Home() {
             <a
               href="https://calendly.com/flowtend/flowtend-demo"
               target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex rounded-2xl bg-white px-8 py-4 text-sm font-medium text-black transition hover:opacity-90"
             >
               Book a Demo
@@ -176,6 +171,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </main>
   );
 }
