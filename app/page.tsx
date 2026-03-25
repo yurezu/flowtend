@@ -1,23 +1,22 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
-
-      {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
+      <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="text-lg font-semibold tracking-tight">
-            Flowtend
-          </div>
+          <div className="text-lg font-semibold tracking-tight">Flowtend</div>
 
           <div className="flex items-center gap-6 text-sm text-white/70">
             <a href="#how-it-works" className="hover:text-white">
               How it works
             </a>
-
+            <a href="#why-flowtend" className="hover:text-white">
+              Why Flowtend
+            </a>
             <a
               href="https://calendly.com/flowtend/flowtend-demo"
               target="_blank"
-              className="rounded-xl bg-white px-4 py-2 text-black font-medium hover:opacity-90"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-white px-4 py-2 font-medium text-black transition hover:opacity-90"
             >
               Book Demo
             </a>
@@ -25,7 +24,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO */}
       <section className="mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-20 pt-24">
         <div className="max-w-4xl">
           <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
@@ -50,6 +48,7 @@ export default function Home() {
             <a
               href="https://calendly.com/flowtend/flowtend-demo"
               target="_blank"
+              rel="noopener noreferrer"
               className="rounded-2xl bg-white px-6 py-3 text-center text-sm font-medium text-black transition hover:opacity-90"
             >
               Book a Demo
@@ -61,6 +60,21 @@ export default function Home() {
             >
               See How It Works
             </a>
+          </div>
+        </div>
+
+        <div className="mt-14 flex flex-wrap items-center gap-3 text-sm text-white/50">
+          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Appointment confirmations
+          </div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Reminder automation
+          </div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Follow-up workflows
+          </div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Built for barbershops
           </div>
         </div>
 
@@ -94,7 +108,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
       <section
         id="how-it-works"
         className="border-t border-white/10 bg-neutral-900/60"
@@ -143,7 +156,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      <section id="why-flowtend" className="border-t border-white/10">
+        <div className="mx-auto grid max-w-7xl gap-6 px-6 py-20 md:grid-cols-2">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
+              Why Flowtend
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight">
+              Built for businesses that live on appointments
+            </h2>
+            <p className="mt-4 text-base leading-8 text-white/70">
+              Barbershops and other service businesses lose money when clients
+              forget appointments. Flowtend helps keep schedules full and
+              communication automatic.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
+              Early access
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight">
+              Simple setup, focused outcome
+            </h2>
+            <p className="mt-4 text-base leading-8 text-white/70">
+              We’re focused on one thing first: reducing no-shows with
+              confirmations, reminders, and follow-up. Clean, lightweight, and
+              built to expand.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section
         id="demo"
         className="border-t border-white/10 bg-gradient-to-b from-neutral-950 to-neutral-900"
@@ -164,6 +208,7 @@ export default function Home() {
             <a
               href="https://calendly.com/flowtend/flowtend-demo"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex rounded-2xl bg-white px-8 py-4 text-sm font-medium text-black transition hover:opacity-90"
             >
               Book a Demo
@@ -171,7 +216,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }
